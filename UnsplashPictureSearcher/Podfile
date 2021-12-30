@@ -1,0 +1,13 @@
+platform :ios, '13.0'
+
+target 'UnsplashPictureSearcher' do
+  use_frameworks!
+
+  # Pods for UnsplashPictureSearcher
+	pod 'Alamofire', '~> 5.4'
+	pod 'Kingfisher'
+ 	pod 'KeychainAccess'
+ 	pod 'Firebase/Crashlytics'
+ 	pod 'Firebase/Analytics'
+
+end
