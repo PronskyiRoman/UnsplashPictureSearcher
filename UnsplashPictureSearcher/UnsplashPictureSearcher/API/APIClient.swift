@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import Alamofire
+
+final class APIClient {
+    private let apiClientUrl = ""
+    private let clientPrivateKey = ""
+    
+    func fechDataRequestForTableView() {
+        
+    }
+    
+    func fechDateRequestFotScrollView() {
+        
+    }
+    
+    func fechDataRequestForDetailedView() {
+        
+    }
+}

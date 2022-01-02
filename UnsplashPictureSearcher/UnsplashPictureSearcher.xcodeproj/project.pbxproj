@@ -12,8 +12,20 @@
 		915594F5277DE386004286E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915594F3277DE386004286E0 /* LaunchScreen.storyboard */; };
 		91559502277DE892004286E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91559501277DE892004286E0 /* GoogleService-Info.plist */; };
 		91559505277DEA1C004286E0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559504277DEA1C004286E0 /* APIClient.swift */; };
-		91559509277DEA60004286E0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559508277DEA60004286E0 /* File.swift */; };
+		91559509277DEA60004286E0 /* AuthWelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */; };
 		BB28EB40903BC14D8CE365EE /* Pods_UnsplashPictureSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */; };
+		E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */; };
+		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
+		E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */; };
+		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
+		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
+		E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */; };
+		E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F62781BAF300EE5E17 /* NavigationServices.swift */; };
+		E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FA2781C0F500EE5E17 /* SignIn.swift */; };
+		E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252FC2781C10100EE5E17 /* SignIn.storyboard */; };
+		E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FE2781C11A00EE5E17 /* Registration.swift */; };
+		E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D253002781C13000EE5E17 /* Registration.storyboard */; };
+		E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D253022781C24C00EE5E17 /* StoryboardsNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +38,20 @@
 		915594F6277DE386004286E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91559501277DE892004286E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91559504277DEA1C004286E0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		91559508277DEA60004286E0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWelcomeScreen.swift; sourceTree = "<group>"; };
 		E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnsplashPictureSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersIdentifiersKeys.swift; sourceTree = "<group>"; };
+		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
+		E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcomeScreen.storyboard; sourceTree = "<group>"; };
+		E9D252F62781BAF300EE5E17 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
+		E9D252FA2781C0F500EE5E17 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		E9D252FC2781C10100EE5E17 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		E9D252FE2781C11A00EE5E17 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		E9D253002781C13000EE5E17 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		E9D253022781C24C00EE5E17 /* StoryboardsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,7 @@
 		915594E7277DE382004286E0 /* UnsplashPictureSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				E9D252F52781BACB00EE5E17 /* Services */,
 				91559503277DE9FD004286E0 /* API */,
 				91559500277DE892004286E0 /* Sources */,
 				91559506277DEA2B004286E0 /* Flows */,
@@ -85,6 +110,7 @@
 		91559500277DE892004286E0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E9D253042781C2DD00EE5E17 /* Enums */,
 				91559501277DE892004286E0 /* GoogleService-Info.plist */,
 			);
 			path = Sources;
@@ -94,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				91559504277DEA1C004286E0 /* APIClient.swift */,
+				E9D252EA2781A6FF00EE5E17 /* DataModels */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -109,7 +136,11 @@
 		91559507277DEA4A004286E0 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				91559508277DEA60004286E0 /* File.swift */,
+				E987BD472781D45C00912204 /* ForgotPassword */,
+				E9D252F92781C07700EE5E17 /* SignIn */,
+				E9D252F82781C05E00EE5E17 /* Registration */,
+				91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */,
+				E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -121,6 +152,59 @@
 				226A6F79A669982C7DD02C8B /* Pods-UnsplashPictureSearcher.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E987BD472781D45C00912204 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E987BD482781D48F00912204 /* ForgotPassword.swift */,
+				E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		E9D252EA2781A6FF00EE5E17 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */,
+				E9D252EF2781A75600EE5E17 /* PictureModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		E9D252F52781BACB00EE5E17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9D252F62781BAF300EE5E17 /* NavigationServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9D252F82781C05E00EE5E17 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E9D252FE2781C11A00EE5E17 /* Registration.swift */,
+				E9D253002781C13000EE5E17 /* Registration.storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		E9D252F92781C07700EE5E17 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E9D252FA2781C0F500EE5E17 /* SignIn.swift */,
+				E9D252FC2781C10100EE5E17 /* SignIn.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E9D253042781C2DD00EE5E17 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E9D253022781C24C00EE5E17 /* StoryboardsNames.swift */,
+				E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				915594F5277DE386004286E0 /* LaunchScreen.storyboard in Resources */,
+				E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */,
+				E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */,
+				E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */,
 				915594F2277DE386004286E0 /* Assets.xcassets in Resources */,
+				E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */,
 				91559502277DE892004286E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */,
+				E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
-				91559509277DEA60004286E0 /* File.swift in Sources */,
+				E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */,
+				91559509277DEA60004286E0 /* AuthWelcomeScreen.swift in Sources */,
+				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
+				E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */,
+				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
 				91559505277DEA1C004286E0 /* APIClient.swift in Sources */,
+				E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */,
+				E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +504,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = UPS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = AuthWelcomeScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,7 +533,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = UPS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = AuthWelcomeScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
