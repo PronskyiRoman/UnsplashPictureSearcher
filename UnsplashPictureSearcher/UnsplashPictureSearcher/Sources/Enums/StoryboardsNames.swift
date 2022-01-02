@@ -12,6 +12,7 @@ enum StoryboardsNamesKeys: String {
     case SignIn
     case Registration
     case ForgotPassword
+    case MainTabBarController
 }
 
 

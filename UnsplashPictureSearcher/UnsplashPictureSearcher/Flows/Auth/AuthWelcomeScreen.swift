@@ -16,6 +16,7 @@ final class AuthWelcomeScreen: UIViewController {
     @IBOutlet private weak var signUpButton: UIButton!
     @IBOutlet private weak var forgotPasswordButton: UIButton!
     private let navigationService = NavigationService()
+    private let setupUIButtonService = SetupUIButtons()
     
     
     //MARK: ViewLoad
@@ -34,9 +35,9 @@ final class AuthWelcomeScreen: UIViewController {
     }
     
     private func setupButtons() {
-        self.signInButton.setTitle("Sign In", for: .normal)
-        self.signUpButton.setTitle("Sign Up", for: .normal)
-        self.forgotPasswordButton.setTitle("Forgot password?", for: .normal)
+        setupUIButtonService.setupButton(with: signInButton, color: .green, title: "Sign In")
+        setupUIButtonService.setupButton(with: signUpButton, color: .blue, title: "Sign Up", tintTextColor: .white)
+        setupUIButtonService.setupButton(with: forgotPasswordButton, color: .gray, title: "Forgot password?", tintTextColor: .green)
     }
     
     //MARK: Actions

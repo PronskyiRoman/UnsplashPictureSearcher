@@ -15,6 +15,12 @@ final class RegistrationScreen: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
     @IBOutlet private weak var registrationScreenTextLabel: UILabel!
+    @IBOutlet private weak var errorEmailUiLabel: UILabel!
+    @IBOutlet private weak var errorPasswordUiLabel: UILabel!
+    @IBOutlet private weak var errorIsNotPasswordUiLabel: UILabel!
+    @IBOutlet private weak var signUpButton: UIButton!
+    private let setupUIButtonService = SetupUIButtons()
+    private let navigationService = NavigationService()
     
     //MARK: ViewLoad
     
@@ -22,6 +28,7 @@ final class RegistrationScreen: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupTextFields()
+        setupButtons()
     }
     
     //MARK: SetupUI
@@ -42,4 +49,15 @@ final class RegistrationScreen: UIViewController {
         self.confirmPasswordTextField.isSecureTextEntry = true
     }
     
+    private func setupButtons() {
+        setupUIButtonService.setupButton(with: signUpButton, color: .blue, title: "Sign Up", tintTextColor: .white)
+    }
+    
+    //MARK: Actions
+    
+    @IBAction private func signUpButtonTapped() {
+        self.navigationService.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
+                                              ViewControllersIdentifiersKeys.MainTabBarController.rawValue,
+                                              self)
+    }
 }

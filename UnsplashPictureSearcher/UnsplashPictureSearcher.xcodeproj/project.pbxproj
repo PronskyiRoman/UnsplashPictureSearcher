@@ -17,6 +17,9 @@
 		E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */; };
 		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
 		E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */; };
+		E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */; };
+		E987BD502782078E00912204 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4F2782078E00912204 /* MainTabBarController.swift */; };
+		E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD51278207A600912204 /* MainTabBarController.storyboard */; };
 		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
 		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
 		E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */; };
@@ -43,6 +46,9 @@
 		E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersIdentifiersKeys.swift; sourceTree = "<group>"; };
 		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUiButtons.swift; sourceTree = "<group>"; };
+		E987BD4F2782078E00912204 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E987BD51278207A600912204 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
 		E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcomeScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		91559506277DEA2B004286E0 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				E987BD4E2782076200912204 /* TabBar */,
 				91559507277DEA4A004286E0 /* Auth */,
 			);
 			path = Flows;
@@ -163,6 +170,15 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
+		E987BD4E2782076200912204 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E987BD4F2782078E00912204 /* MainTabBarController.swift */,
+				E987BD51278207A600912204 /* MainTabBarController.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		E9D252EA2781A6FF00EE5E17 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D252F62781BAF300EE5E17 /* NavigationServices.swift */,
+				E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,6 +288,7 @@
 				915594F5277DE386004286E0 /* LaunchScreen.storyboard in Resources */,
 				E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */,
 				E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */,
+				E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */,
 				E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */,
 				915594F2277DE386004286E0 /* Assets.xcassets in Resources */,
 				E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */,
@@ -347,11 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */,
+				E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */,
 				E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
 				E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */,
 				91559509277DEA60004286E0 /* AuthWelcomeScreen.swift in Sources */,
 				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
+				E987BD502782078E00912204 /* MainTabBarController.swift in Sources */,
 				E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */,
 				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
 				91559505277DEA1C004286E0 /* APIClient.swift in Sources */,
