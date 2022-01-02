@@ -19,6 +19,7 @@ final class ApplicationSignInScreen: UIViewController {
     //MARK: SetupUI
     
     private func setupUI() {
+        self.view.backgroundColor = .systemGray3
         self.title = "Sign In"
     }
 }

@@ -23,15 +23,20 @@ final class AuthWelcomeScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupButtons()
     }
     
     //MARK: SetupUI
     
     private func setupUI() {
+        self.view.backgroundColor = .systemGray3
+        self.applicationNameLabel.text = "Unsplash Picture Searcher"
+    }
+    
+    private func setupButtons() {
         self.signInButton.setTitle("Sign In", for: .normal)
         self.signUpButton.setTitle("Sign Up", for: .normal)
         self.forgotPasswordButton.setTitle("Forgot password?", for: .normal)
-        self.applicationNameLabel.text = "Unsplash Picture Searcher"
     }
     
     //MARK: Actions

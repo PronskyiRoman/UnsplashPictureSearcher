@@ -15,9 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dmx-N3-GRY">
+                                <rect key="frame" x="20" y="267" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-6I-TMP">
+                                <rect key="frame" x="20" y="311" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGF-Hs-VBI">
+                                <rect key="frame" x="20" y="355" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-Ku-kdH">
+                                <rect key="frame" x="139" y="146" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xGF-Hs-VBI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="5LK-Vv-B70"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" constant="-40" id="AeU-8J-WCM"/>
+                            <constraint firstItem="i9s-Ku-kdH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JI9-dl-639"/>
+                            <constraint firstItem="xGF-Hs-VBI" firstAttribute="top" secondItem="vdK-6I-TMP" secondAttribute="bottom" constant="10" id="JXt-zB-d5T"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="KWh-Ab-oO0"/>
+                            <constraint firstItem="vdK-6I-TMP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RAj-hh-hAv"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="top" secondItem="i9s-Ku-kdH" secondAttribute="bottom" constant="100" id="U3i-kh-cev"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="width" secondItem="xGF-Hs-VBI" secondAttribute="width" id="k6c-A9-awb"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oAb-U0-6FZ"/>
+                            <constraint firstItem="Dmx-N3-GRY" firstAttribute="width" secondItem="vdK-6I-TMP" secondAttribute="width" id="q5K-js-IGn"/>
+                            <constraint firstItem="vdK-6I-TMP" firstAttribute="top" secondItem="Dmx-N3-GRY" secondAttribute="bottom" constant="10" id="zgl-2M-x78"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="xGF-Hs-VBI" id="UBN-XD-1Ll"/>
+                        <outlet property="emailTextField" destination="Dmx-N3-GRY" id="S9j-IB-UZM"/>
+                        <outlet property="passwordTextField" destination="vdK-6I-TMP" id="Vxs-4B-MhQ"/>
+                        <outlet property="registrationScreenTextLabel" destination="i9s-Ku-kdH" id="RN6-cp-D8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
