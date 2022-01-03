@@ -13,4 +13,6 @@ enum ViewControllersIdentifiersKeys: String {
     case ApplicationSignInScreen
     case ForgotPasswordScreen
     case MainTabBarController
+    case PictureTableViewScreen
+    case UserProfileScreen
 }

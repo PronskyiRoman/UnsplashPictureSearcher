@@ -58,6 +58,7 @@ final class RegistrationScreen: UIViewController {
     @IBAction private func signUpButtonTapped() {
         self.navigationService.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
                                               ViewControllersIdentifiersKeys.MainTabBarController.rawValue,
-                                              self)
+                                              self,
+                                              navigationBarIsHidden: true)
     }
 }

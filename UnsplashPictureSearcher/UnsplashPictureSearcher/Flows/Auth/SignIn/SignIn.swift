@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 final class ApplicationSignInScreen: UIViewController {
     
@@ -30,6 +31,11 @@ final class ApplicationSignInScreen: UIViewController {
         setupButtons()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupLeftBarButtonItem()
+    }
+    
     //MARK: SetupUI
     
     private func setupUI() {
@@ -50,6 +56,16 @@ final class ApplicationSignInScreen: UIViewController {
         setupUIButtonService.setupButton(with: restorePasswordButton, color: .clear, title: "Restore Password")
     }
     
+    private func setupLeftBarButtonItem() {
+        let backItem = UIButton()
+        backItem.setTitle(" Back", for: .normal)
+        backItem.setTitleColor(.systemBlue, for: .normal)
+        backItem.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        backItem.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        backItem.addTarget(self, action: #selector(leftBarButtonItemTapped), for: .allEvents)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backItem)
+    }
+    
     //MARK: Actions
     
     @IBAction private func forgotPasswordButtonTapped() {
@@ -61,6 +77,13 @@ final class ApplicationSignInScreen: UIViewController {
     @IBAction private func signInButtonTapped() {
         self.navigationService.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
                                               ViewControllersIdentifiersKeys.MainTabBarController.rawValue,
+                                              self,
+                                              navigationBarIsHidden: true)
+    }
+    
+    @objc private func leftBarButtonItemTapped() {
+        self.navigationService.showController(StoryboardsNamesKeys.AuthWelcome.rawValue,
+                                              ViewControllersIdentifiersKeys.AuthWelcomeScreen.rawValue,
                                               self)
     }
 }

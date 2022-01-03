@@ -8,11 +8,13 @@
 import Foundation
 
 enum StoryboardsNamesKeys: String {
-    case AuthWelcomeScreen
+    case AuthWelcome
     case SignIn
     case Registration
     case ForgotPassword
     case MainTabBarController
+    case PictureTableView
+    case UserProfile
 }
 
 

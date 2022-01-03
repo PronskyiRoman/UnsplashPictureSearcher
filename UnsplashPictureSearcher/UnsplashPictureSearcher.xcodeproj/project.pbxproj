@@ -12,7 +12,7 @@
 		915594F5277DE386004286E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915594F3277DE386004286E0 /* LaunchScreen.storyboard */; };
 		91559502277DE892004286E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91559501277DE892004286E0 /* GoogleService-Info.plist */; };
 		91559505277DEA1C004286E0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559504277DEA1C004286E0 /* APIClient.swift */; };
-		91559509277DEA60004286E0 /* AuthWelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */; };
+		91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559508277DEA60004286E0 /* AuthWelcome.swift */; };
 		BB28EB40903BC14D8CE365EE /* Pods_UnsplashPictureSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */; };
 		E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */; };
 		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
@@ -20,9 +20,16 @@
 		E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */; };
 		E987BD502782078E00912204 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4F2782078E00912204 /* MainTabBarController.swift */; };
 		E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD51278207A600912204 /* MainTabBarController.storyboard */; };
+		E987BD5527832F8300912204 /* PictureTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5427832F8300912204 /* PictureTableView.storyboard */; };
+		E987BD5727832FAC00912204 /* PictureTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5627832FAC00912204 /* PictureTableView.swift */; };
+		E987BD5927832FC300912204 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5827832FC300912204 /* PictureTableViewCell.swift */; };
+		E987BD5B27832FEC00912204 /* PictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5A27832FEC00912204 /* PictureTableViewCell.xib */; };
+		E987BD5E2783320600912204 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5D2783320600912204 /* UserProfile.storyboard */; };
+		E987BD602783322100912204 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5F2783322100912204 /* UserProfile.swift */; };
+		E987BD622783337E00912204 /* SetupKeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD612783337E00912204 /* SetupKeyboardService.swift */; };
 		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
 		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
-		E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */; };
+		E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */; };
 		E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F62781BAF300EE5E17 /* NavigationServices.swift */; };
 		E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FA2781C0F500EE5E17 /* SignIn.swift */; };
 		E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252FC2781C10100EE5E17 /* SignIn.storyboard */; };
@@ -41,7 +48,7 @@
 		915594F6277DE386004286E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91559501277DE892004286E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91559504277DEA1C004286E0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWelcomeScreen.swift; sourceTree = "<group>"; };
+		91559508277DEA60004286E0 /* AuthWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWelcome.swift; sourceTree = "<group>"; };
 		E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnsplashPictureSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersIdentifiersKeys.swift; sourceTree = "<group>"; };
 		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
@@ -49,9 +56,16 @@
 		E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUiButtons.swift; sourceTree = "<group>"; };
 		E987BD4F2782078E00912204 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E987BD51278207A600912204 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
+		E987BD5427832F8300912204 /* PictureTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PictureTableView.storyboard; sourceTree = "<group>"; };
+		E987BD5627832FAC00912204 /* PictureTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableView.swift; sourceTree = "<group>"; };
+		E987BD5827832FC300912204 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
+		E987BD5A27832FEC00912204 /* PictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTableViewCell.xib; sourceTree = "<group>"; };
+		E987BD5D2783320600912204 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		E987BD5F2783322100912204 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E987BD612783337E00912204 /* SetupKeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupKeyboardService.swift; sourceTree = "<group>"; };
 		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
-		E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcomeScreen.storyboard; sourceTree = "<group>"; };
+		E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcome.storyboard; sourceTree = "<group>"; };
 		E9D252F62781BAF300EE5E17 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
 		E9D252FA2781C0F500EE5E17 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		E9D252FC2781C10100EE5E17 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -134,6 +148,8 @@
 		91559506277DEA2B004286E0 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				E987BD5C278331E100912204 /* UserProfile */,
+				E987BD5327832F5E00912204 /* MainTableView */,
 				E987BD4E2782076200912204 /* TabBar */,
 				91559507277DEA4A004286E0 /* Auth */,
 			);
@@ -146,8 +162,8 @@
 				E987BD472781D45C00912204 /* ForgotPassword */,
 				E9D252F92781C07700EE5E17 /* SignIn */,
 				E9D252F82781C05E00EE5E17 /* Registration */,
-				91559508277DEA60004286E0 /* AuthWelcomeScreen.swift */,
-				E9D252F32781B7D400EE5E17 /* AuthWelcomeScreen.storyboard */,
+				91559508277DEA60004286E0 /* AuthWelcome.swift */,
+				E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -179,6 +195,26 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		E987BD5327832F5E00912204 /* MainTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E987BD5427832F8300912204 /* PictureTableView.storyboard */,
+				E987BD5627832FAC00912204 /* PictureTableView.swift */,
+				E987BD5A27832FEC00912204 /* PictureTableViewCell.xib */,
+				E987BD5827832FC300912204 /* PictureTableViewCell.swift */,
+			);
+			path = MainTableView;
+			sourceTree = "<group>";
+		};
+		E987BD5C278331E100912204 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E987BD5D2783320600912204 /* UserProfile.storyboard */,
+				E987BD5F2783322100912204 /* UserProfile.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
 		E9D252EA2781A6FF00EE5E17 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +229,7 @@
 			children = (
 				E9D252F62781BAF300EE5E17 /* NavigationServices.swift */,
 				E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */,
+				E987BD612783337E00912204 /* SetupKeyboardService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -289,10 +326,13 @@
 				E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */,
 				E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */,
 				E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */,
-				E9D252F42781B7D400EE5E17 /* AuthWelcomeScreen.storyboard in Resources */,
+				E987BD5B27832FEC00912204 /* PictureTableViewCell.xib in Resources */,
+				E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */,
 				915594F2277DE386004286E0 /* Assets.xcassets in Resources */,
+				E987BD5527832F8300912204 /* PictureTableView.storyboard in Resources */,
 				E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */,
 				91559502277DE892004286E0 /* GoogleService-Info.plist in Resources */,
+				E987BD5E2783320600912204 /* UserProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +408,16 @@
 				E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */,
 				E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
+				E987BD622783337E00912204 /* SetupKeyboardService.swift in Sources */,
 				E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */,
-				91559509277DEA60004286E0 /* AuthWelcomeScreen.swift in Sources */,
+				91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */,
 				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
 				E987BD502782078E00912204 /* MainTabBarController.swift in Sources */,
+				E987BD5927832FC300912204 /* PictureTableViewCell.swift in Sources */,
+				E987BD5727832FAC00912204 /* PictureTableView.swift in Sources */,
 				E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */,
 				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
+				E987BD602783322100912204 /* UserProfile.swift in Sources */,
 				91559505277DEA1C004286E0 /* APIClient.swift in Sources */,
 				E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */,
 				E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */,
