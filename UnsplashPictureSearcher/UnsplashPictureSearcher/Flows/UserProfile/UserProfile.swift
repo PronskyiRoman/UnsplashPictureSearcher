@@ -16,8 +16,8 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK: Services
     
-    private let setupUIButtonService = SetupUIButtonsManager()
-    private let setupTextFieldsServices = SetupTextFieldsManager()
+    private let setupUIButtonManager = SetupUIButtonsManager()
+    private let setupTextFieldsManager = SetupTextFieldsManager()
     
     //MARK: IBOutlets
     
@@ -55,17 +55,17 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     }
     
     private func setupTextFields() {
-        setupTextFieldsServices.setup(with: firstNameTextField, placeholder: "First Name", textContentType: .name)
-        setupTextFieldsServices.setup(with: lastNameTextField, placeholder: "Last Name", textContentType: .familyName)
-        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
-        setupTextFieldsServices.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
-        setupTextFieldsServices.setup(with: confirmPasswordTextField, placeholder: "Confirm Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsManager.setup(with: firstNameTextField, placeholder: "First Name", textContentType: .name)
+        setupTextFieldsManager.setup(with: lastNameTextField, placeholder: "Last Name", textContentType: .familyName)
+        setupTextFieldsManager.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
+        setupTextFieldsManager.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsManager.setup(with: confirmPasswordTextField, placeholder: "Confirm Password", textContentType: .password, isSecureTextEntry: true)
     }
     
     private func setupButtons() {
-        setupUIButtonService.setupButton(with: changePasswordUiButton, color: .clear, title: "Do you want to change password?")
-        setupUIButtonService.setupButton(with: saveButton, color: .systemGreen, title: "Save", tintTextColor: .white)
-        setupUIButtonService.setupButton(with: editButton, color: .systemBlue, title: "Edit", tintTextColor: .white)
+        setupUIButtonManager.setupButton(with: changePasswordUiButton, color: .clear, title: "Do you want to change password?")
+        setupUIButtonManager.setupButton(with: saveButton, color: .systemGreen, title: "Save", tintTextColor: .white)
+        setupUIButtonManager.setupButton(with: editButton, color: .systemBlue, title: "Edit", tintTextColor: .white)
     }
     
     private func setupKeyboard() {

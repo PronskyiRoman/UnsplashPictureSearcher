@@ -22,9 +22,9 @@ final class RegistrationScreen: UIViewController {
     
     //MARK: Services
     
-    private let setupUIButtonService = SetupUIButtonsManager()
-    private let navigationService = NavigationManager()
-    private let setupTextFieldsServices = SetupTextFieldsManager()
+    private let setupUIButtonManager = SetupUIButtonsManager()
+    private let navigationManager = NavigationManager()
+    private let setupTextFieldsManager = SetupTextFieldsManager()
     
     //MARK: ViewLoad
     
@@ -43,19 +43,19 @@ final class RegistrationScreen: UIViewController {
     }
     
     private func setupTextFields() {
-        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
-        setupTextFieldsServices.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
-        setupTextFieldsServices.setup(with: confirmPasswordTextField, placeholder: "Confirm Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsManager.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
+        setupTextFieldsManager.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsManager.setup(with: confirmPasswordTextField, placeholder: "Confirm Password", textContentType: .password, isSecureTextEntry: true)
     }
     
     private func setupButtons() {
-        setupUIButtonService.setupButton(with: signUpButton, color: .blue, title: "Sign Up", tintTextColor: .white)
+        setupUIButtonManager.setupButton(with: signUpButton, color: .blue, title: "Sign Up", tintTextColor: .white)
     }
     
     //MARK: Actions
     
     @IBAction private func signUpButtonTapped() {
-        self.navigationService.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
+        self.navigationManager.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
                                               ViewControllersIdentifiersKeys.MainTabBarController.rawValue,
                                               self,
                                               navigationBarIsHidden: true)

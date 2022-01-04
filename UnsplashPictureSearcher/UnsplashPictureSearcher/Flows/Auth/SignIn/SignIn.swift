@@ -22,9 +22,9 @@ final class ApplicationSignInScreen: UIViewController {
     
     //MARK: Services
     
-    private let setupUIButtonService = SetupUIButtonsManager()
-    private let navigationService = NavigationManager()
-    private let setupTextFieldsServices = SetupTextFieldsManager()
+    private let setupUIButtonManager = SetupUIButtonsManager()
+    private let navigationManager = NavigationManager()
+    private let setupTextFieldsManager = SetupTextFieldsManager()
     
     //MARK: ViewLoad
     
@@ -48,13 +48,13 @@ final class ApplicationSignInScreen: UIViewController {
     }
     
     private func setupTextFields() {
-        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
-        setupTextFieldsServices.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsManager.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
+        setupTextFieldsManager.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
     }
     
     private func setupButtons() {
-        setupUIButtonService.setupButton(with: signInButton, color: .systemGreen, title: "Sign In")
-        setupUIButtonService.setupButton(with: restorePasswordButton, color: .clear, title: "Restore Password")
+        setupUIButtonManager.setupButton(with: signInButton, color: .systemGreen, title: "Sign In")
+        setupUIButtonManager.setupButton(with: restorePasswordButton, color: .clear, title: "Restore Password")
     }
     
     private func setupLeftBarButtonItem() {
@@ -70,20 +70,20 @@ final class ApplicationSignInScreen: UIViewController {
     //MARK: Actions
     
     @IBAction private func forgotPasswordButtonTapped() {
-        self.navigationService.showController(StoryboardsNamesKeys.ForgotPassword.rawValue,
+        self.navigationManager.showController(StoryboardsNamesKeys.ForgotPassword.rawValue,
                                               ViewControllersIdentifiersKeys.ForgotPasswordScreen.rawValue,
                                               self)
     }
     
     @IBAction private func signInButtonTapped() {
-        self.navigationService.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
+        self.navigationManager.showController(StoryboardsNamesKeys.MainTabBarController.rawValue,
                                               ViewControllersIdentifiersKeys.MainTabBarController.rawValue,
                                               self,
                                               navigationBarIsHidden: true)
     }
     
     @objc private func leftBarButtonItemTapped() {
-        self.navigationService.showController(StoryboardsNamesKeys.AuthWelcome.rawValue,
+        self.navigationManager.showController(StoryboardsNamesKeys.AuthWelcome.rawValue,
                                               ViewControllersIdentifiersKeys.AuthWelcomeScreen.rawValue,
                                               self)
     }
