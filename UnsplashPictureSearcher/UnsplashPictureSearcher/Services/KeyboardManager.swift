@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import SwiftUI
 
-final class SetupKeyboardService {
+final class KeyboardManager {
     
     //MARK: Properties
     
@@ -25,14 +24,23 @@ final class SetupKeyboardService {
         setupKeyboard()
     }
     
+    //MARK: Functions
+    
     private func setupKeyboard() {
+        addTarget()
         hideKeyboard()
         keyboardWillShow()
         keyboardWillHide()
     }
     
-    private func hideKeyboard() {
-        controller.view.endEditing(true)
+    private func addTarget() {
+        self.controller.view.addGestureRecognizer(self.tapGestureRecognizer)
+        self.tapGestureRecognizer.delegate = self.controller as? UIGestureRecognizerDelegate
+        self.tapGestureRecognizer.addTarget(self, action: #selector(self.hideKeyboard))
+    }
+    
+    @IBAction private func hideKeyboard() {
+        self.controller.view.endEditing(true)
     }
     
     private func keyboardWillShow() {

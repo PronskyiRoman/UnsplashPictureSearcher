@@ -17,7 +17,7 @@
 		E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */; };
 		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
 		E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */; };
-		E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */; };
+		E987BD4D2781F9CF00912204 /* SetupUIButtonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */; };
 		E987BD502782078E00912204 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4F2782078E00912204 /* MainTabBarController.swift */; };
 		E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD51278207A600912204 /* MainTabBarController.storyboard */; };
 		E987BD5527832F8300912204 /* PictureTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5427832F8300912204 /* PictureTableView.storyboard */; };
@@ -26,11 +26,12 @@
 		E987BD5B27832FEC00912204 /* PictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5A27832FEC00912204 /* PictureTableViewCell.xib */; };
 		E987BD5E2783320600912204 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5D2783320600912204 /* UserProfile.storyboard */; };
 		E987BD602783322100912204 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5F2783322100912204 /* UserProfile.swift */; };
-		E987BD622783337E00912204 /* SetupKeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD612783337E00912204 /* SetupKeyboardService.swift */; };
+		E987BD622783337E00912204 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD612783337E00912204 /* KeyboardManager.swift */; };
+		E987BD642784B79500912204 /* SetupTextFieldsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD632784B79500912204 /* SetupTextFieldsManager.swift */; };
 		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
 		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
 		E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */; };
-		E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F62781BAF300EE5E17 /* NavigationServices.swift */; };
+		E9D252F72781BAF300EE5E17 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F62781BAF300EE5E17 /* NavigationManager.swift */; };
 		E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FA2781C0F500EE5E17 /* SignIn.swift */; };
 		E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252FC2781C10100EE5E17 /* SignIn.storyboard */; };
 		E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FE2781C11A00EE5E17 /* Registration.swift */; };
@@ -53,7 +54,7 @@
 		E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersIdentifiersKeys.swift; sourceTree = "<group>"; };
 		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
-		E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUiButtons.swift; sourceTree = "<group>"; };
+		E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUIButtonsManager.swift; sourceTree = "<group>"; };
 		E987BD4F2782078E00912204 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E987BD51278207A600912204 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 		E987BD5427832F8300912204 /* PictureTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PictureTableView.storyboard; sourceTree = "<group>"; };
@@ -62,11 +63,12 @@
 		E987BD5A27832FEC00912204 /* PictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTableViewCell.xib; sourceTree = "<group>"; };
 		E987BD5D2783320600912204 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		E987BD5F2783322100912204 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		E987BD612783337E00912204 /* SetupKeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupKeyboardService.swift; sourceTree = "<group>"; };
+		E987BD612783337E00912204 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		E987BD632784B79500912204 /* SetupTextFieldsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTextFieldsManager.swift; sourceTree = "<group>"; };
 		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
 		E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcome.storyboard; sourceTree = "<group>"; };
-		E9D252F62781BAF300EE5E17 /* NavigationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationServices.swift; sourceTree = "<group>"; };
+		E9D252F62781BAF300EE5E17 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		E9D252FA2781C0F500EE5E17 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		E9D252FC2781C10100EE5E17 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		E9D252FE2781C11A00EE5E17 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
@@ -227,9 +229,10 @@
 		E9D252F52781BACB00EE5E17 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E9D252F62781BAF300EE5E17 /* NavigationServices.swift */,
-				E987BD4C2781F9CF00912204 /* SetupUiButtons.swift */,
-				E987BD612783337E00912204 /* SetupKeyboardService.swift */,
+				E9D252F62781BAF300EE5E17 /* NavigationManager.swift */,
+				E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */,
+				E987BD612783337E00912204 /* KeyboardManager.swift */,
+				E987BD632784B79500912204 /* SetupTextFieldsManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -405,10 +408,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */,
-				E987BD4D2781F9CF00912204 /* SetupUiButtons.swift in Sources */,
+				E987BD4D2781F9CF00912204 /* SetupUIButtonsManager.swift in Sources */,
 				E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */,
+				E987BD642784B79500912204 /* SetupTextFieldsManager.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
-				E987BD622783337E00912204 /* SetupKeyboardService.swift in Sources */,
+				E987BD622783337E00912204 /* KeyboardManager.swift in Sources */,
 				E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */,
 				91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */,
 				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
@@ -419,7 +423,7 @@
 				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
 				E987BD602783322100912204 /* UserProfile.swift in Sources */,
 				91559505277DEA1C004286E0 /* APIClient.swift in Sources */,
-				E9D252F72781BAF300EE5E17 /* NavigationServices.swift in Sources */,
+				E9D252F72781BAF300EE5E17 /* NavigationManager.swift in Sources */,
 				E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +572,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = UPS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = AuthWelcomeScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = UserProfile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -597,7 +601,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = UPS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = AuthWelcomeScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = UserProfile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

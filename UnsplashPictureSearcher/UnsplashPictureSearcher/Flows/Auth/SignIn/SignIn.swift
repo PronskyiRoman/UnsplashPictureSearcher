@@ -10,7 +10,7 @@ import SwiftUI
 
 final class ApplicationSignInScreen: UIViewController {
     
-    //MARK: Properties
+    //MARK: IBOutlets
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -19,8 +19,12 @@ final class ApplicationSignInScreen: UIViewController {
     @IBOutlet private weak var signInScreenLabel: UILabel!
     @IBOutlet private weak var restorePasswordButton: UIButton!
     @IBOutlet private weak var signInButton: UIButton!
-    private let setupUIButtonService = SetupUIButtons()
-    private let navigationService = NavigationService()
+    
+    //MARK: Services
+    
+    private let setupUIButtonService = SetupUIButtonsManager()
+    private let navigationService = NavigationManager()
+    private let setupTextFieldsServices = SetupTextFieldsManager()
     
     //MARK: ViewLoad
     
@@ -44,11 +48,8 @@ final class ApplicationSignInScreen: UIViewController {
     }
     
     private func setupTextFields() {
-        self.emailTextField.placeholder = "@Email"
-        self.passwordTextField.placeholder = "Password"
-        self.passwordTextField.textContentType = .password
-        self.emailTextField.textContentType = .emailAddress
-        self.passwordTextField.isSecureTextEntry = true
+        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
+        setupTextFieldsServices.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
     }
     
     private func setupButtons() {

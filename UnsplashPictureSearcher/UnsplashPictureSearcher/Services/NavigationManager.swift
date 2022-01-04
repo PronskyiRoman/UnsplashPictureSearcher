@@ -7,16 +7,16 @@
 
 import UIKit
 
-final class NavigationService {
+final class NavigationManager {
     
     //MARK: Functions
     
     func showController(_ storyboardName: String,_ controllerIdentifier: String, _ controller: UIViewController, navigationBarIsHidden: Bool = false, leftBarButtonItemIsHidden: Bool = false) {
-        let storyboard1 = UIStoryboard(name: storyboardName, bundle: nil)
-        let controller1 = storyboard1.instantiateViewController(withIdentifier: controllerIdentifier)
-        controller1.modalPresentationStyle = .fullScreen
-        controller1.modalTransitionStyle = .crossDissolve
-        controller.navigationController?.show(controller1, sender: controller)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let presentedController = storyboard.instantiateViewController(withIdentifier: controllerIdentifier)
+        presentedController.modalPresentationStyle = .fullScreen
+        presentedController.modalTransitionStyle = .crossDissolve
+        controller.navigationController?.show(presentedController, sender: controller)
         controller.navigationController?.navigationBar.isHidden = navigationBarIsHidden
         if leftBarButtonItemIsHidden == true {
             controller.navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)

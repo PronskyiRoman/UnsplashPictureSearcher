@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SetupUIButtons {
+final class SetupUIButtonsManager {
     
     //MARK: Functions
     

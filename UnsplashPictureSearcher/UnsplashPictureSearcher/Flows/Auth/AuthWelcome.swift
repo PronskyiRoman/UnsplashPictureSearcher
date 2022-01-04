@@ -9,15 +9,17 @@ import UIKit
 
 final class AuthWelcomeScreen: UIViewController {
     
-    //MARK: Properties
+    //MARK: IBOutlets
     
     @IBOutlet private weak var applicationNameLabel: UILabel!
     @IBOutlet private weak var signInButton: UIButton!
     @IBOutlet private weak var signUpButton: UIButton!
     @IBOutlet private weak var forgotPasswordButton: UIButton!
-    private let navigationService = NavigationService()
-    private let setupUIButtonService = SetupUIButtons()
     
+    //MARK: Services
+    
+    private let navigationService = NavigationManager()
+    private let setupUIButtonService = SetupUIButtonsManager()
     
     //MARK: ViewLoad
     

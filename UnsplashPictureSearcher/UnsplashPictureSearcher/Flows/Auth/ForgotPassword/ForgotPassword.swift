@@ -9,14 +9,18 @@ import UIKit
 
 final class ForgotPasswordScreen: UIViewController {
     
-    //MARK: Properties
+    //MARK: IBOutlets
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var errorEmailUiLabel: UILabel!
     @IBOutlet private weak var restorePasswordScreenLabel: UILabel!
     @IBOutlet private weak var restorePasswordButton: UIButton!
-    private let setupUIButtonService = SetupUIButtons()
-    private let navigationService = NavigationService()
+    
+    //MARK: Services
+    
+    private let setupUIButtonService = SetupUIButtonsManager()
+    private let navigationService = NavigationManager()
+    private let setupTextFieldsServices = SetupTextFieldsManager()
     
     //MARK: ViewLoad
     
@@ -35,8 +39,7 @@ final class ForgotPasswordScreen: UIViewController {
     }
     
     private func setupTextFields() {
-        self.emailTextField.placeholder = "@Email"
-        self.emailTextField.textContentType = .emailAddress
+        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
     }
     
     private func setupButtons() {

@@ -9,7 +9,7 @@ import UIKit
 
 final class RegistrationScreen: UIViewController {
     
-    //MARK: Properties
+    //MARK: IBOutlets
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -19,8 +19,12 @@ final class RegistrationScreen: UIViewController {
     @IBOutlet private weak var errorPasswordUiLabel: UILabel!
     @IBOutlet private weak var errorIsNotPasswordUiLabel: UILabel!
     @IBOutlet private weak var signUpButton: UIButton!
-    private let setupUIButtonService = SetupUIButtons()
-    private let navigationService = NavigationService()
+    
+    //MARK: Services
+    
+    private let setupUIButtonService = SetupUIButtonsManager()
+    private let navigationService = NavigationManager()
+    private let setupTextFieldsServices = SetupTextFieldsManager()
     
     //MARK: ViewLoad
     
@@ -39,14 +43,9 @@ final class RegistrationScreen: UIViewController {
     }
     
     private func setupTextFields() {
-        self.emailTextField.placeholder = "@Email"
-        self.passwordTextField.placeholder = "Password"
-        self.confirmPasswordTextField.placeholder = "Confirm Password"
-        self.passwordTextField.textContentType = .password
-        self.confirmPasswordTextField.textContentType = .password
-        self.emailTextField.textContentType = .emailAddress
-        self.passwordTextField.isSecureTextEntry = true
-        self.confirmPasswordTextField.isSecureTextEntry = true
+        setupTextFieldsServices.setup(with: emailTextField, placeholder: "@Email", textContentType: .emailAddress)
+        setupTextFieldsServices.setup(with: passwordTextField, placeholder: "Password", textContentType: .password, isSecureTextEntry: true)
+        setupTextFieldsServices.setup(with: confirmPasswordTextField, placeholder: "Confirm Password", textContentType: .password, isSecureTextEntry: true)
     }
     
     private func setupButtons() {
