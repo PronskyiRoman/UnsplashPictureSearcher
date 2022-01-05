@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct PictureModel {
+struct PictureModel: Codable {
     var data: [NestedPictureModel]
 }
 
-struct NestedPictureModel {
+struct NestedPictureModel: Codable {
     
 }

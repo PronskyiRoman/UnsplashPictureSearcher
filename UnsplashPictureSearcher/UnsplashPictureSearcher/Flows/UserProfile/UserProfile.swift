@@ -13,6 +13,7 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     let agreementString: String = "I agree with the privacy policy"
     let tapGestureRecognizer = UITapGestureRecognizer()
+    let placeholderForTextView = "User info"
     
     //MARK: Services
     
@@ -35,6 +36,7 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet private weak var editButton: UIButton!
     @IBOutlet private weak var usersProfileImageView: UIImageView!
     @IBOutlet private weak var userProfileScrollView: UIScrollView!
+    @IBOutlet private weak var userProfileContentView: UIView!
     
     
     //MARK: LoadView
@@ -50,8 +52,12 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     //MARK: SetupUi
     
     private func setupUI() {
-        self.usersProfileImageView.backgroundColor = .systemGray3
+        self.usersProfileImageView.backgroundColor = .systemGray
         self.agreementLabel.text = agreementString
+        self.userProfileContentView.backgroundColor = .systemGray4
+        self.userInfoTextView.layer.cornerRadius = 5
+        self.userInfoTextView.text = placeholderForTextView
+        self.userInfoTextView.delegate = self
     }
     
     private func setupTextFields() {
@@ -70,5 +76,24 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     private func setupKeyboard() {
         _ = KeyboardManager(tapGestureRecognizer: tapGestureRecognizer, scrollView: userProfileScrollView, controller: self)
+    }
+}
+
+//MARK: Extensions
+
+extension UserProfileScreen: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if userInfoTextView.text == placeholderForTextView {
+            userInfoTextView.text = ""
+        }
+        var frame = textView.frame
+        frame.size.height += 30
+        self.userInfoTextView.scrollRectToVisible(frame, animated: true)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if self.userInfoTextView.text == "" {
+            self.userInfoTextView.text = self.placeholderForTextView
+        }
     }
 }

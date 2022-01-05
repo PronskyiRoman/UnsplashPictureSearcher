@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct DetailedViewModel {
+struct DetailedViewModel: Codable {
     
 }

@@ -173,6 +173,7 @@
                         <outlet property="passwordTextField" destination="kFF-2D-GEp" id="9DA-Jh-A9M"/>
                         <outlet property="saveButton" destination="G65-Ih-aOV" id="HHR-E1-z2q"/>
                         <outlet property="userInfoTextView" destination="Ac2-Ek-Wpj" id="BtY-2m-pyS"/>
+                        <outlet property="userProfileContentView" destination="8Es-dr-Q6i" id="mXy-FB-fMH"/>
                         <outlet property="userProfileLabel" destination="qzn-Tz-464" id="WjX-ad-ADA"/>
                         <outlet property="userProfileScrollView" destination="Cx1-Z3-Onu" id="EOP-X6-dwj"/>
                         <outlet property="usersProfileImageView" destination="x2I-da-NK1" id="ySx-gV-4Lb"/>
