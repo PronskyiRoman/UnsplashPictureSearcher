@@ -17,7 +17,7 @@ final class APIClient {
     //MARK: requestForPictureTableView
     
     func fechDataRequestForTableView(by searchQuery: String? = "Photo",
-                                     requestItemsPerPage: Int = 1,
+                                     requestItemsPerPage: Int = 10,
                                      completion: @escaping(PictureModel) -> Void) {
         guard let searchQuery = searchQuery else { return }
         AF.request(self.apiClientUrl + "/search/photos?per_page=\(requestItemsPerPage)&query=\(searchQuery)\(self.clientPrivateKey)", method: .get).responseDecodable(of: PictureModel.self) { responce in

@@ -20,4 +20,9 @@ final class PictureTableViewCell: UITableViewCell {
     
     //MARK: Functions
     
+    func setupCells(with structure: NestedPictureModel) {
+        photographerNameLabel.textAlignment = .center
+        self.photographerNameLabel.text = "Photographer - \(structure.photographerName)"
+        self.pictureImageView.setImage(imageUrl: structure.pictureURL)
+    }
 }
