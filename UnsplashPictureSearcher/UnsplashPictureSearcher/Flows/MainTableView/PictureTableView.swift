@@ -38,7 +38,7 @@ final class PictureTableView: UIViewController {
     //MARK: Networking
     
     private func dataRequest() {
-        networkManager.fechDataRequestForTableView(completion: setDataToStruct)
+        self.networkManager.fechDataRequestForTableView(completion: setDataToStruct)
     }
     
     private func setDataToStruct(_ models: PictureModel) {

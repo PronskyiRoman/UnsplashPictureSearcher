@@ -38,6 +38,12 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet private weak var userProfileScrollView: UIScrollView!
     @IBOutlet private weak var userProfileContentView: UIView!
     
+    //MARK: Init
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupTabBarItem()
+    }
     
     //MARK: LoadView
     
@@ -74,12 +80,16 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
         setupUIButtonManager.setupButton(with: editButton, color: .systemBlue, title: "Edit", tintTextColor: .white)
     }
     
+    private func setupTabBarItem() {
+        self.tabBarItem = UITabBarItem(title: "User Profile", image: UIImage(systemName: "person"), tag: 0)
+    }
+    
     private func setupKeyboard() {
         _ = KeyboardManager(tapGestureRecognizer: tapGestureRecognizer, scrollView: userProfileScrollView, controller: self)
     }
 }
 
-//MARK: Extensions
+//MARK: UITextViewDelegate
 
 extension UserProfileScreen: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {

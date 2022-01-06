@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,77 +13,77 @@
             <objects>
                 <viewController storyboardIdentifier="UserProfileScreen" id="Y6W-OH-hqX" customClass="UserProfileScreen" customModule="UnsplashPictureSearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cx1-Z3-Onu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Es-dr-Q6i">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2I-da-NK1">
-                                                <rect key="frame" x="20" y="101" width="167" height="150"/>
+                                                <rect key="frame" x="20" y="101" width="120" height="150"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzn-Tz-464">
-                                                <rect key="frame" x="20" y="40" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="40" width="280" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nN7-E1-6Ch">
-                                                <rect key="frame" x="20" y="324" width="374" height="30"/>
+                                                <rect key="frame" x="20" y="324" width="280" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-Ek-Wpj">
-                                                <rect key="frame" x="20" y="271" width="374" height="33"/>
+                                                <rect key="frame" x="20" y="271" width="280" height="33"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFF-2D-GEp">
-                                                <rect key="frame" x="20" y="424" width="374" height="30"/>
+                                                <rect key="frame" x="20" y="424" width="280" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nK7-6R-cRR">
-                                                <rect key="frame" x="20" y="524" width="305" height="21"/>
+                                                <rect key="frame" x="20" y="524" width="211" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFx-1h-86f">
-                                                <rect key="frame" x="345" y="519" width="51" height="31"/>
+                                                <rect key="frame" x="251" y="519" width="51" height="31"/>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc4-hI-zBm">
-                                                <rect key="frame" x="20" y="565" width="177" height="30"/>
+                                                <rect key="frame" x="20" y="565" width="130" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G65-Ih-aOV">
-                                                <rect key="frame" x="217" y="565" width="177" height="30"/>
+                                                <rect key="frame" x="170" y="565" width="130" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-5m-9ft">
-                                                <rect key="frame" x="20" y="474" width="374" height="30"/>
+                                                <rect key="frame" x="20" y="474" width="280" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTv-Bp-DuB">
-                                                <rect key="frame" x="207" y="191" width="187" height="30"/>
+                                                <rect key="frame" x="160" y="191" width="140" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs3-wE-OPK">
-                                                <rect key="frame" x="20" y="374" width="374" height="30"/>
+                                                <rect key="frame" x="20" y="374" width="280" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E33-8C-mob">
-                                                <rect key="frame" x="207" y="131" width="187" height="30"/>
+                                                <rect key="frame" x="160" y="131" width="140" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ZeJ-tq-fOJ"/>
                                                 </constraints>
@@ -153,10 +153,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8Es-dr-Q6i" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" id="2hl-RM-6d3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cx1-Z3-Onu" secondAttribute="trailing" id="9gy-Op-Nr8"/>
                             <constraint firstItem="Cx1-Z3-Onu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GXn-gh-BLE"/>
-                            <constraint firstItem="8Es-dr-Q6i" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" id="XUW-76-aG8"/>
-                            <constraint firstItem="8Es-dr-Q6i" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="oEr-sf-c7B"/>
+                            <constraint firstItem="8Es-dr-Q6i" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" id="Tjf-Dw-Rpm"/>
                             <constraint firstItem="Cx1-Z3-Onu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xFG-Er-HxW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cx1-Z3-Onu" secondAttribute="bottom" id="yGL-RG-4YG"/>
                         </constraints>

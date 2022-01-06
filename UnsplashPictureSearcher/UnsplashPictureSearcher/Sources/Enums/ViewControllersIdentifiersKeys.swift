@@ -15,4 +15,5 @@ enum ViewControllersIdentifiersKeys: String {
     case MainTabBarController
     case PictureTableViewScreen
     case UserProfileScreen
+    case PictureCollectionViewScreen
 }

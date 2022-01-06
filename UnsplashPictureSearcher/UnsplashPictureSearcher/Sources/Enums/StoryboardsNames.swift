@@ -15,6 +15,7 @@ enum StoryboardsNamesKeys: String {
     case MainTabBarController
     case PictureTableView
     case UserProfile
+    case PictureCollectionView
 }
 
 

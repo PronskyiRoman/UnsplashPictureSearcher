@@ -18,8 +18,6 @@
 		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
 		E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */; };
 		E987BD4D2781F9CF00912204 /* SetupUIButtonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */; };
-		E987BD502782078E00912204 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD4F2782078E00912204 /* MainTabBarController.swift */; };
-		E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD51278207A600912204 /* MainTabBarController.storyboard */; };
 		E987BD5527832F8300912204 /* PictureTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD5427832F8300912204 /* PictureTableView.storyboard */; };
 		E987BD5727832FAC00912204 /* PictureTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5627832FAC00912204 /* PictureTableView.swift */; };
 		E987BD5927832FC300912204 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD5827832FC300912204 /* PictureTableViewCell.swift */; };
@@ -29,6 +27,10 @@
 		E987BD622783337E00912204 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD612783337E00912204 /* KeyboardManager.swift */; };
 		E987BD642784B79500912204 /* SetupTextFieldsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD632784B79500912204 /* SetupTextFieldsManager.swift */; };
 		E987BD672785D2F500912204 /* KFextensionUiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD662785D2F500912204 /* KFextensionUiImage.swift */; };
+		E987BD6A2786F5E600912204 /* PictureCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD692786F5E600912204 /* PictureCollectionView.storyboard */; };
+		E987BD6C2786F64D00912204 /* PictureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD6B2786F64D00912204 /* PictureCollectionView.swift */; };
+		E987BD6E2786F66300912204 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD6D2786F66300912204 /* PictureCollectionViewCell.swift */; };
+		E987BD702786F67300912204 /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E987BD6F2786F67300912204 /* PictureCollectionViewCell.xib */; };
 		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
 		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
 		E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */; };
@@ -38,6 +40,8 @@
 		E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252FE2781C11A00EE5E17 /* Registration.swift */; };
 		E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D253002781C13000EE5E17 /* Registration.storyboard */; };
 		E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D253022781C24C00EE5E17 /* StoryboardsNames.swift */; };
+		E9FB8C4F2786F8C000E51CEC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB8C4D2786F8C000E51CEC /* MainTabBarController.swift */; };
+		E9FB8C502786F8C000E51CEC /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FB8C4E2786F8C000E51CEC /* MainTabBarController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +60,6 @@
 		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUIButtonsManager.swift; sourceTree = "<group>"; };
-		E987BD4F2782078E00912204 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		E987BD51278207A600912204 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 		E987BD5427832F8300912204 /* PictureTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PictureTableView.storyboard; sourceTree = "<group>"; };
 		E987BD5627832FAC00912204 /* PictureTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableView.swift; sourceTree = "<group>"; };
 		E987BD5827832FC300912204 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		E987BD612783337E00912204 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		E987BD632784B79500912204 /* SetupTextFieldsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTextFieldsManager.swift; sourceTree = "<group>"; };
 		E987BD662785D2F500912204 /* KFextensionUiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFextensionUiImage.swift; sourceTree = "<group>"; };
+		E987BD692786F5E600912204 /* PictureCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PictureCollectionView.storyboard; sourceTree = "<group>"; };
+		E987BD6B2786F64D00912204 /* PictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionView.swift; sourceTree = "<group>"; };
+		E987BD6D2786F66300912204 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		E987BD6F2786F67300912204 /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
 		E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcome.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 		E9D252FE2781C11A00EE5E17 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		E9D253002781C13000EE5E17 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		E9D253022781C24C00EE5E17 /* StoryboardsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsNames.swift; sourceTree = "<group>"; };
+		E9FB8C4D2786F8C000E51CEC /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E9FB8C4E2786F8C000E51CEC /* MainTabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +161,10 @@
 		91559506277DEA2B004286E0 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				E9FB8C4C2786F8C000E51CEC /* MainTabBarController */,
 				E987BD5C278331E100912204 /* UserProfile */,
 				E987BD5327832F5E00912204 /* MainTableView */,
-				E987BD4E2782076200912204 /* TabBar */,
+				E987BD682786F5B300912204 /* PictureCollectionView */,
 				91559507277DEA4A004286E0 /* Auth */,
 			);
 			path = Flows;
@@ -191,15 +200,6 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
-		E987BD4E2782076200912204 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				E987BD4F2782078E00912204 /* MainTabBarController.swift */,
-				E987BD51278207A600912204 /* MainTabBarController.storyboard */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		E987BD5327832F5E00912204 /* MainTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +226,17 @@
 				E987BD662785D2F500912204 /* KFextensionUiImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E987BD682786F5B300912204 /* PictureCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E987BD692786F5E600912204 /* PictureCollectionView.storyboard */,
+				E987BD6B2786F64D00912204 /* PictureCollectionView.swift */,
+				E987BD6F2786F67300912204 /* PictureCollectionViewCell.xib */,
+				E987BD6D2786F66300912204 /* PictureCollectionViewCell.swift */,
+			);
+			path = PictureCollectionView;
 			sourceTree = "<group>";
 		};
 		E9D252EA2781A6FF00EE5E17 /* DataModels */ = {
@@ -273,6 +284,15 @@
 				E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		E9FB8C4C2786F8C000E51CEC /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E9FB8C4D2786F8C000E51CEC /* MainTabBarController.swift */,
+				E9FB8C4E2786F8C000E51CEC /* MainTabBarController.storyboard */,
+			);
+			path = MainTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +359,11 @@
 				915594F5277DE386004286E0 /* LaunchScreen.storyboard in Resources */,
 				E9D253012781C13000EE5E17 /* Registration.storyboard in Resources */,
 				E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */,
-				E987BD52278207A600912204 /* MainTabBarController.storyboard in Resources */,
+				E987BD6A2786F5E600912204 /* PictureCollectionView.storyboard in Resources */,
+				E987BD702786F67300912204 /* PictureCollectionViewCell.xib in Resources */,
 				E987BD5B27832FEC00912204 /* PictureTableViewCell.xib in Resources */,
 				E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */,
+				E9FB8C502786F8C000E51CEC /* MainTabBarController.storyboard in Resources */,
 				915594F2277DE386004286E0 /* Assets.xcassets in Resources */,
 				E987BD5527832F8300912204 /* PictureTableView.storyboard in Resources */,
 				E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */,
@@ -424,16 +446,18 @@
 				E987BD642784B79500912204 /* SetupTextFieldsManager.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
 				E987BD622783337E00912204 /* KeyboardManager.swift in Sources */,
+				E987BD6C2786F64D00912204 /* PictureCollectionView.swift in Sources */,
 				E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */,
 				91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */,
 				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
-				E987BD502782078E00912204 /* MainTabBarController.swift in Sources */,
 				E987BD5927832FC300912204 /* PictureTableViewCell.swift in Sources */,
 				E987BD5727832FAC00912204 /* PictureTableView.swift in Sources */,
 				E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */,
 				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
 				E987BD602783322100912204 /* UserProfile.swift in Sources */,
 				91559505277DEA1C004286E0 /* APIClient.swift in Sources */,
+				E987BD6E2786F66300912204 /* PictureCollectionViewCell.swift in Sources */,
+				E9FB8C4F2786F8C000E51CEC /* MainTabBarController.swift in Sources */,
 				E9D252F72781BAF300EE5E17 /* NavigationManager.swift in Sources */,
 				E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */,
 				E987BD672785D2F500912204 /* KFextensionUiImage.swift in Sources */,

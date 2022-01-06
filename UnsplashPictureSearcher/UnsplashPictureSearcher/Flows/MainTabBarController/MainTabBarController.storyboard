@@ -17,6 +17,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="VGa-UM-pZ4" kind="relationship" relationship="viewControllers" id="pEZ-wR-v9I"/>
+                        <segue destination="ZHM-YB-LEh" kind="relationship" relationship="viewControllers" id="cd1-wQ-J1b"/>
+                        <segue destination="cui-T4-EtC" kind="relationship" relationship="viewControllers" id="ctm-cR-PWz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vd-Ob-Ljo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,6 +34,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njb-8a-cop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744" y="-180"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="bMe-He-oPx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="ZHM-YB-LEh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DVR-Kk-gIE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIe-oE-NVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="-48"/>
+        </scene>
+        <!--PictureCollectionView-->
+        <scene sceneID="40V-hp-wBu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PictureCollectionView" id="cui-T4-EtC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Cyt-LG-Cdn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPB-in-AWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="54"/>
         </scene>
     </scenes>
 </document>
