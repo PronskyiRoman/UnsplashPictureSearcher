@@ -34,7 +34,7 @@ struct NestedPictureModel {
     //MARK: Propertyes
     
     let pictureID: String
-    let photographerName: String
+    var photographerName: String? = "Unknown Photographer"
     let pictureURL: String
     
     //MARK: CodingKeys

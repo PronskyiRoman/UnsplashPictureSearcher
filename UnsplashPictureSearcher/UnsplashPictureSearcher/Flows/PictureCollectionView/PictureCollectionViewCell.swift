@@ -22,7 +22,8 @@ final class PictureCollectionViewCell: UICollectionViewCell {
     
     func setupCells(with structure: NestedPictureModel) {
         photographerNameLabel.textAlignment = .center
-        self.photographerNameLabel.text = "Photographer - \(structure.photographerName)"
+        guard let photographerName = structure.photographerName else { return }
+        self.photographerNameLabel.text = "\(photographerName)"
         self.pictureImageView.setImage(imageUrl: structure.pictureURL)
     }
 }
