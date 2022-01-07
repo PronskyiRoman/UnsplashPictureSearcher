@@ -14,12 +14,8 @@ final class PictureCollectionView: UICollectionViewController {
     private let networkManager = APIClient()
     private let setInsetsForCell = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
     private let lineSpacingForCollectionView: Int = 6
-//    private let countItemsInRowForCollectionView: Float = 3.3
-//    private let countItemsInLineForCollectionView: Float = 4
-    
     private let countItemsInRowForCollectionView: Float = 3.3
     private let countItemsInLineForCollectionView: Float = 4
-    
     private var detailsStructure: [NestedPictureModel]?
      
     //MARK: init
@@ -91,7 +87,6 @@ extension PictureCollectionView: UICollectionViewDelegateFlowLayout {
         let spaceForItemInRow = freeSpaceForRow / CGFloat(countItemsInRowForCollectionView)
         
         let paddingsForHeight = setInsetsForCell.top * CGFloat(countItemsInLineForCollectionView + 1)
-        //self.view.frame.size.height self.view.safeAreaLayoutGuide.layoutFrame.height
         let freeSpaceForHeight = self.collectionView.safeAreaLayoutGuide.layoutFrame.height - paddingsForHeight
         let spaceForItemInLine = freeSpaceForHeight / CGFloat(countItemsInLineForCollectionView)
         let size = CGSize(width: spaceForItemInRow, height: spaceForItemInLine)
