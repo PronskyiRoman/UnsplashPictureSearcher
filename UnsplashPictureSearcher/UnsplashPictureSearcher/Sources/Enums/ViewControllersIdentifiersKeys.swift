@@ -16,4 +16,5 @@ enum ViewControllersIdentifiersKeys: String {
     case PictureTableViewScreen
     case UserProfileScreen
     case PictureCollectionViewScreen
+    case DetailedPictureScreen
 }

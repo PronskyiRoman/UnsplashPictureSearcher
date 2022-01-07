@@ -16,6 +16,7 @@ enum StoryboardsNamesKeys: String {
     case PictureTableView
     case UserProfile
     case PictureCollectionView
+    case DetailedPicture
 }
 
 

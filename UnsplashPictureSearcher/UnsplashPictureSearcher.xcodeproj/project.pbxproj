@@ -14,6 +14,8 @@
 		91559505277DEA1C004286E0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559504277DEA1C004286E0 /* APIClient.swift */; };
 		91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91559508277DEA60004286E0 /* AuthWelcome.swift */; };
 		BB28EB40903BC14D8CE365EE /* Pods_UnsplashPictureSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */; };
+		E95BA01E27886325004B8DC0 /* DetailedPicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95BA01D27886325004B8DC0 /* DetailedPicture.storyboard */; };
+		E95BA02027886334004B8DC0 /* DetailedPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95BA01F27886334004B8DC0 /* DetailedPicture.swift */; };
 		E987BD462781C9B300912204 /* ViewControllersIdentifiersKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */; };
 		E987BD492781D48F00912204 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD482781D48F00912204 /* ForgotPassword.swift */; };
 		E987BD4B2781D4B200912204 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */; };
@@ -56,6 +58,8 @@
 		91559504277DEA1C004286E0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		91559508277DEA60004286E0 /* AuthWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWelcome.swift; sourceTree = "<group>"; };
 		E29D4956D24AC6A5638C2280 /* Pods_UnsplashPictureSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnsplashPictureSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95BA01D27886325004B8DC0 /* DetailedPicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailedPicture.storyboard; sourceTree = "<group>"; };
+		E95BA01F27886334004B8DC0 /* DetailedPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPicture.swift; sourceTree = "<group>"; };
 		E987BD452781C9B300912204 /* ViewControllersIdentifiersKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersIdentifiersKeys.swift; sourceTree = "<group>"; };
 		E987BD482781D48F00912204 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		E987BD4A2781D4B200912204 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -161,11 +165,12 @@
 		91559506277DEA2B004286E0 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				91559507277DEA4A004286E0 /* Auth */,
 				E9FB8C4C2786F8C000E51CEC /* MainTabBarController */,
 				E987BD5C278331E100912204 /* UserProfile */,
 				E987BD5327832F5E00912204 /* MainTableView */,
 				E987BD682786F5B300912204 /* PictureCollectionView */,
-				91559507277DEA4A004286E0 /* Auth */,
+				E95BA01C278862DA004B8DC0 /* DetailedPictureScreen */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -189,6 +194,15 @@
 				226A6F79A669982C7DD02C8B /* Pods-UnsplashPictureSearcher.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E95BA01C278862DA004B8DC0 /* DetailedPictureScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E95BA01D27886325004B8DC0 /* DetailedPicture.storyboard */,
+				E95BA01F27886334004B8DC0 /* DetailedPicture.swift */,
+			);
+			path = DetailedPictureScreen;
 			sourceTree = "<group>";
 		};
 		E987BD472781D45C00912204 /* ForgotPassword */ = {
@@ -361,6 +375,7 @@
 				E9D252FD2781C10100EE5E17 /* SignIn.storyboard in Resources */,
 				E987BD6A2786F5E600912204 /* PictureCollectionView.storyboard in Resources */,
 				E987BD702786F67300912204 /* PictureCollectionViewCell.xib in Resources */,
+				E95BA01E27886325004B8DC0 /* DetailedPicture.storyboard in Resources */,
 				E987BD5B27832FEC00912204 /* PictureTableViewCell.xib in Resources */,
 				E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */,
 				E9FB8C502786F8C000E51CEC /* MainTabBarController.storyboard in Resources */,
@@ -442,6 +457,7 @@
 			files = (
 				E9D252FF2781C11A00EE5E17 /* Registration.swift in Sources */,
 				E987BD4D2781F9CF00912204 /* SetupUIButtonsManager.swift in Sources */,
+				E95BA02027886334004B8DC0 /* DetailedPicture.swift in Sources */,
 				E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */,
 				E987BD642784B79500912204 /* SetupTextFieldsManager.swift in Sources */,
 				915594E9277DE382004286E0 /* AppDelegate.swift in Sources */,
