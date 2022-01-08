@@ -16,7 +16,7 @@ final class AuthWelcomeScreen: UIViewController {
     @IBOutlet private weak var signUpButton: UIButton!
     @IBOutlet private weak var forgotPasswordButton: UIButton!
     
-    //MARK: Services
+    //MARK: Managers
     
     private let navigationManager = NavigationManager()
     private let setupUIButtonManager = SetupUIButtonsManager()

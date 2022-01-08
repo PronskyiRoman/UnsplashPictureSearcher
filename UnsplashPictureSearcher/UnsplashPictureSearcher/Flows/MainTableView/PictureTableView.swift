@@ -12,7 +12,11 @@ final class PictureTableView: UIViewController {
     //MARK: Properties
     
     private var responceStructure: [NestedPictureModel]?
+    
+    //MARK: Managers
+    
     private let networkManager = APIClient()
+    private let navigationManager = NavigationManager()
     
     //MARK: IBOutlets
     
@@ -63,6 +67,12 @@ final class PictureTableView: UIViewController {
         self.pictureTableView.dataSource = self
         self.pictureTableView.register(UINib(nibName: "PictureTableViewCell", bundle: nil), forCellReuseIdentifier: PictureTableViewCell.reuseidentifier)
     }
+    
+    //MARK: Navigation
+    
+    private func showDetailedScreen() {
+        self.navigationManager.showController(StoryboardsNamesKeys.DetailedPicture.rawValue, ViewControllersIdentifiersKeys.DetailedPictureScreen.rawValue, self)
+    }
 }
 
 //MARK: UITableViewDelegate
@@ -70,6 +80,7 @@ final class PictureTableView: UIViewController {
 extension PictureTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        showDetailedScreen()
     }
 }
 

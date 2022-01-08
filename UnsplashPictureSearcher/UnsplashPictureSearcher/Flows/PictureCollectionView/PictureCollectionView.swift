@@ -11,12 +11,16 @@ final class PictureCollectionView: UICollectionViewController {
     
     //MARK: Properties
     
-    private let networkManager = APIClient()
     private let setInsetsForCell = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
     private let lineSpacingForCollectionView: Int = 6
     private let countItemsInRowForCollectionView: Float = 3.3
     private let countItemsInLineForCollectionView: Float = 4
     private var detailsStructure: [NestedPictureModel]?
+    
+    //MARK: Managers
+    
+    private let networkManager = APIClient()
+    private let navigationManager = NavigationManager()
      
     //MARK: init
     
@@ -59,6 +63,16 @@ final class PictureCollectionView: UICollectionViewController {
     
     private func dataRequest() {
         self.networkManager.fechDataRequestForTableView(completion: setDataToStruct)
+    }
+    
+    //MARK: Functions
+    
+    private func showDetailedScreen() {
+        self.navigationManager.showController(StoryboardsNamesKeys.DetailedPicture.rawValue, ViewControllersIdentifiersKeys.DetailedPictureScreen.rawValue, self)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        showDetailedScreen()
     }
 }
 
