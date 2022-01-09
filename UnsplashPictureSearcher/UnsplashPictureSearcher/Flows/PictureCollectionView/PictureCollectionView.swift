@@ -15,7 +15,7 @@ final class PictureCollectionView: UICollectionViewController {
     private let lineSpacingForCollectionView: Int = 6
     private let countItemsInRowForCollectionView: Float = 3.3
     private let countItemsInLineForCollectionView: Float = 4
-    private var detailsStructure: [NestedPictureModel]?
+    private var responceStructure: [NestedPictureModel]?
     
     //MARK: Managers
     
@@ -57,22 +57,19 @@ final class PictureCollectionView: UICollectionViewController {
     //MARK: Networking
     
     private func setDataToStruct(from model: PictureModel) {
-        self.detailsStructure = model.responceData
+        self.responceStructure = model.responceData
         self.collectionView.reloadData()
     }
     
     private func dataRequest() {
-        self.networkManager.fechDataRequestForTableView(completion: setDataToStruct)
+        self.networkManager.fechDataRequest(completion: setDataToStruct)
     }
     
     //MARK: Functions
     
-    private func showDetailedScreen() {
-        self.navigationManager.showController(StoryboardsNamesKeys.DetailedPicture.rawValue, ViewControllersIdentifiersKeys.DetailedPictureScreen.rawValue, self)
-    }
-    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        showDetailedScreen()
+        guard let responceStructure = self.responceStructure else { return }
+        self.navigationManager.showDetailedController(controller: self, scructure: responceStructure, indexPath: indexPath)
     }
 }
 
@@ -85,7 +82,7 @@ extension PictureCollectionView {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: PictureCollectionViewCell.reuseidentifier, for: indexPath) as! PictureCollectionViewCell
-        guard let detailsStructure = self.detailsStructure else {return cell}
+        guard let detailsStructure = self.responceStructure else { return cell }
         cell.setupCells(with: detailsStructure[indexPath.row])
         return cell
     }

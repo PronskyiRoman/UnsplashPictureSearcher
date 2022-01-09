@@ -24,5 +24,15 @@ final class NavigationManager {
             return
         }
     }
+    
+    func showDetailedController(controller: UIViewController, scructure: [NestedPictureModel], indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: StoryboardsNamesKeys.DetailedPicture.rawValue, bundle: nil)
+        let presentedController = storyboard.instantiateViewController(withIdentifier: ViewControllersIdentifiersKeys.DetailedPictureScreen.rawValue) as! DetailedPictureScreen
+        presentedController.modalPresentationStyle = .fullScreen
+        presentedController.modalTransitionStyle = .crossDissolve
+        let currentPictureID = scructure[indexPath.row].pictureID
+        presentedController.detailedPictureIdentifier = currentPictureID
+        controller.navigationController?.show(presentedController, sender: controller)
+    }
 }
 

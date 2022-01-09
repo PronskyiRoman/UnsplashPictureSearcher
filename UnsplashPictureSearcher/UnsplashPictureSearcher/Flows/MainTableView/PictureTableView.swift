@@ -42,7 +42,7 @@ final class PictureTableView: UIViewController {
     //MARK: Networking
     
     private func dataRequest() {
-        self.networkManager.fechDataRequestForTableView(completion: setDataToStruct)
+        self.networkManager.fechDataRequest(completion: setDataToStruct)
     }
     
     private func setDataToStruct(_ models: PictureModel) {
@@ -70,8 +70,9 @@ final class PictureTableView: UIViewController {
     
     //MARK: Navigation
     
-    private func showDetailedScreen() {
-        self.navigationManager.showController(StoryboardsNamesKeys.DetailedPicture.rawValue, ViewControllersIdentifiersKeys.DetailedPictureScreen.rawValue, self)
+    private func showDetailedScreen(indexPath: IndexPath) {
+        guard let responceStructure = self.responceStructure else { return }
+        self.navigationManager.showDetailedController(controller: self, scructure: responceStructure, indexPath: indexPath)
     }
 }
 
@@ -80,7 +81,7 @@ final class PictureTableView: UIViewController {
 extension PictureTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        showDetailedScreen()
+        showDetailedScreen(indexPath: indexPath)
     }
 }
 

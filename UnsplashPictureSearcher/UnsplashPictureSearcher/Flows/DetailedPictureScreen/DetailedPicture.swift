@@ -9,6 +9,14 @@ import UIKit
 
 final class DetailedPictureScreen: UIViewController {
     
+    //MARK: Propertyes
+    
+    var detailedPictureIdentifier : String?
+    
+    //MARK: Managers
+    
+    private let networkManager = APIClient()
+    
     //MARK: IBOutlets
     
     @IBOutlet private weak var currentImageUiImageView: UIImageView!
@@ -28,22 +36,35 @@ final class DetailedPictureScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        dataRequest()
     }
     
     //MARK: SetupUI
     
     private func setupUI() {
         self.title = "Detailed Screen"
-        currentImageUiImageView.backgroundColor = .red
-        photographerProfileImageUiImageView.backgroundColor = .systemGray
-        currentImageDescriptionUiLabel.text = "currentImageDescriptionUiLabel"
-        currentImageLocationUiLabel.text = "currentImageLocationUiLabel"
-        dateOfCreationCurrentImageUiLabel.text = "dateOfCreationCurrentImageUiLabel"
-        photographerFirstNameUiLabel.text = "photographerFirstNameUiLabel"
-        photographerLastNameUiLabel.text = "photographerLastNameUiLabel"
-        photographerInfoUiLabel.text = "photographerInfoUiLabel"
-        totalPhotoByPhotographerUiLabel.text = "totalPhotoByPhotographerUiLabel"
-        photographerInstagramNickNameUiLabel.text = "photographerInstagramNickNameUiLabel"
-        photographerTwitterNickNameUiLabel.text = "photographerTwitterNickNameUiLabel"
+    }
+    
+    private func setupResponceData(from model: DetailedViewModel) {
+        currentImageUiImageView.setImage(imageUrl: model.currentImage)
+        photographerProfileImageUiImageView.setImage(imageUrl: model.userProfileImage ?? "Image not found")
+        currentImageDescriptionUiLabel.text = model.imageDescription
+        currentImageLocationUiLabel.text = model.imageLocation
+        dateOfCreationCurrentImageUiLabel.text = model.dateOfCreation
+        photographerFirstNameUiLabel.text = model.firstName
+        photographerLastNameUiLabel.text = model.lastName
+        photographerInfoUiLabel.text = model.bioText
+        if let countPhoto = model.totalPhotoesCount {
+            totalPhotoByPhotographerUiLabel.text = "photos \(countPhoto)"
+        }
+        photographerInstagramNickNameUiLabel.text = model.instagramLink
+        photographerTwitterNickNameUiLabel.text = model.twitterLink
+    }
+    
+    //MARK: DataRequest
+    
+    private func dataRequest() {
+        guard let detailedPictureIdentifier = self.detailedPictureIdentifier else { return }
+        self.networkManager.fetchDataRequestForDetailedScreen(searchQuery: detailedPictureIdentifier, completion: setupResponceData)
     }
 }

@@ -14,9 +14,9 @@ final class APIClient {
     private let apiClientUrl = "https://api.unsplash.com"
     private let clientPrivateKey = "?&client_id=e_sbNrFSBhUP6J2xBAKQUDKk-L0WKG7Zn5aIIAX4fWU"
     
-    //MARK: requestForPictureTableView
+    //MARK: fechDataRequest
     
-    func fechDataRequestForTableView(by searchQuery: String? = "Photo",
+    func fechDataRequest(by searchQuery: String? = "Photo",
                                      requestItemsPerPage: Int = 30,
                                      completion: @escaping(PictureModel) -> Void) {
         guard let searchQuery = searchQuery else { return }
@@ -26,38 +26,12 @@ final class APIClient {
         }
     }
     
-    //MARK: requestFotScrollView
+    //MARK: fetchDataRequestForDetailedScreen
     
-    func fechDateRequestFotScrollView() {
-        
-    }
-    
-    //MARK: requestForDetailedTableView
-    
-    func fechDataRequestForDetailedTableView(completion: @escaping(DetailedViewModel) -> Void) {
-    //    if let selectedProtoIndex = PictureTableViewController.selectedProtoIndex {
-    //        guard PictureTableViewCell.idForPfoto.count >=  selectedProtoIndex else { return }
-        //PictureTableViewCell.idForPfoto[selectedProtoIndex]
-        AF.request(self.apiClientUrl + "/photos/\("")\(self.clientPrivateKey)", method: .get).responseDecodable(of: DetailedViewModel.self) {  responce in
-                guard let responceValue = responce.value else { return }
-                completion(responceValue)
-            }
-        }
-    
-    //MARK: requestForDetailedCollectionView
-    
-    func fetchDataRequestForDetailedCollectionView(completion: @escaping(DetailedViewModel) -> Void) {
-       // if let selectedProtoIndex = ForestCollectionViewController.selectedIndexPath {
-       //     guard ForestCollectionViewCell.idForPfoto.count >=  selectedProtoIndex else { return }
-        // ForestCollectionViewCell.idForPfoto[selectedProtoIndex]
-            AF.request(self.apiClientUrl + "/photos/\("")\(self.self.clientPrivateKey)", method: .get).responseDecodable(of: DetailedViewModel.self) {  responce in
+    func fetchDataRequestForDetailedScreen(searchQuery: String, completion: @escaping(DetailedViewModel) -> Void) {
+            AF.request(self.apiClientUrl + "/photos/\(searchQuery)\(self.self.clientPrivateKey)", method: .get).responseDecodable(of: DetailedViewModel.self) {  responce in
                 guard let responceValue = responce.value else { return }
                 completion(responceValue)
             }
         }
     }
-
-
-
-
-
