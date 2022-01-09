@@ -33,6 +33,7 @@
 		E987BD6C2786F64D00912204 /* PictureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD6B2786F64D00912204 /* PictureCollectionView.swift */; };
 		E987BD6E2786F66300912204 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987BD6D2786F66300912204 /* PictureCollectionViewCell.swift */; };
 		E987BD702786F67300912204 /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E987BD6F2786F67300912204 /* PictureCollectionViewCell.xib */; };
+		E9A4AE52278B17CD007B58C5 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4AE51278B17CD007B58C5 /* ValidationManager.swift */; };
 		E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252EF2781A75600EE5E17 /* PictureModel.swift */; };
 		E9D252F22781A75600EE5E17 /* DetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */; };
 		E9D252F42781B7D400EE5E17 /* AuthWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */; };
@@ -77,6 +78,7 @@
 		E987BD6B2786F64D00912204 /* PictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionView.swift; sourceTree = "<group>"; };
 		E987BD6D2786F66300912204 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		E987BD6F2786F67300912204 /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
+		E9A4AE51278B17CD007B58C5 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		E9D252EF2781A75600EE5E17 /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		E9D252F02781A75600EE5E17 /* DetailedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewModel.swift; sourceTree = "<group>"; };
 		E9D252F32781B7D400EE5E17 /* AuthWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthWelcome.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				E987BD4C2781F9CF00912204 /* SetupUIButtonsManager.swift */,
 				E987BD612783337E00912204 /* KeyboardManager.swift */,
 				E987BD632784B79500912204 /* SetupTextFieldsManager.swift */,
+				E9A4AE51278B17CD007B58C5 /* ValidationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				91559509277DEA60004286E0 /* AuthWelcome.swift in Sources */,
 				E9D253032781C24C00EE5E17 /* StoryboardsNames.swift in Sources */,
 				E987BD5927832FC300912204 /* PictureTableViewCell.swift in Sources */,
+				E9A4AE52278B17CD007B58C5 /* ValidationManager.swift in Sources */,
 				E987BD5727832FAC00912204 /* PictureTableView.swift in Sources */,
 				E9D252F12781A75600EE5E17 /* PictureModel.swift in Sources */,
 				E9D252FB2781C0F500EE5E17 /* SignIn.swift in Sources */,
