@@ -25,6 +25,7 @@ final class ApplicationSignInScreen: UIViewController {
     private let setupUIButtonManager = SetupUIButtonsManager()
     private let navigationManager = NavigationManager()
     private let setupTextFieldsManager = SetupTextFieldsManager()
+    private let validationManager = ValidationManager()
     
     //MARK: ViewLoad
     
@@ -45,6 +46,9 @@ final class ApplicationSignInScreen: UIViewController {
     private func setupUI() {
         self.view.backgroundColor = .systemGray3
         self.title = "Sign In"
+        self.signInButton.isEnabled = false
+        self.errorEmailUiLabel.isHidden = true
+        self.errorPasswordUiLabel.isHidden = true
     }
     
     private func setupTextFields() {
@@ -53,7 +57,7 @@ final class ApplicationSignInScreen: UIViewController {
     }
     
     private func setupButtons() {
-        setupUIButtonManager.setupButton(with: signInButton, color: .systemGreen, title: "Sign In")
+        setupUIButtonManager.setupButton(with: signInButton, color: .systemGreen, title: "Sign In", tintTextColor: .white)
         setupUIButtonManager.setupButton(with: restorePasswordButton, color: .clear, title: "Restore Password")
     }
     
@@ -65,6 +69,20 @@ final class ApplicationSignInScreen: UIViewController {
         backItem.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         backItem.addTarget(self, action: #selector(leftBarButtonItemTapped), for: .allEvents)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backItem)
+    }
+    
+    //MARK: Functions
+    
+    private func validate() {
+        let resultOfValidationEmail = validationManager.validateEmail(emailTextField: self.emailTextField,
+                                                                      emailErrorLabel: self.errorEmailUiLabel)
+        let resultOfValidationPassword = validationManager.validatePassword(passwordTextField: self.passwordTextField,
+                                                                            errorPasswordLabel: self.errorPasswordUiLabel)
+        if resultOfValidationEmail && resultOfValidationPassword {
+            signInButton.isEnabled = true
+        } else {
+            signInButton.isEnabled = false
+        }
     }
     
     //MARK: Actions
@@ -86,5 +104,9 @@ final class ApplicationSignInScreen: UIViewController {
         self.navigationManager.showController(StoryboardsNamesKeys.AuthWelcome.rawValue,
                                               ViewControllersIdentifiersKeys.AuthWelcomeScreen.rawValue,
                                               self)
+    }
+    
+    @IBAction private func validateTextFields() {
+        validate()
     }
 }

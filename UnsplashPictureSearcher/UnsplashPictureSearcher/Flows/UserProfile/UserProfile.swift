@@ -19,6 +19,7 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     private let setupUIButtonManager = SetupUIButtonsManager()
     private let setupTextFieldsManager = SetupTextFieldsManager()
+    private let validationManager = ValidationManager()
     
     //MARK: IBOutlets
     
@@ -37,6 +38,9 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet private weak var usersProfileImageView: UIImageView!
     @IBOutlet private weak var userProfileScrollView: UIScrollView!
     @IBOutlet private weak var userProfileContentView: UIView!
+    @IBOutlet private weak var errorEmailUiLabel: UILabel!
+    @IBOutlet private weak var errorPasswordUiLabel: UILabel!
+    @IBOutlet private weak var errorConfirmtPasswordUiLabel: UILabel!
     
     //MARK: Init
     
@@ -64,6 +68,9 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
         self.userInfoTextView.layer.cornerRadius = 5
         self.userInfoTextView.text = placeholderForTextView
         self.userInfoTextView.delegate = self
+        self.errorEmailUiLabel.isHidden = true
+        self.errorPasswordUiLabel.isHidden = true
+        self.errorConfirmtPasswordUiLabel.isHidden = true
     }
     
     private func setupTextFields() {
@@ -87,6 +94,29 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     private func setupKeyboard() {
         _ = KeyboardManager(tapGestureRecognizer: tapGestureRecognizer, scrollView: userProfileScrollView, controller: self)
     }
+    
+    //MARK: Functions
+    
+    private func validate() {
+        let resultOfValidationEmail = validationManager.validateEmail(emailTextField: self.emailTextField,
+                                                                      emailErrorLabel: self.errorEmailUiLabel)
+        let resultOfValidationPassword = validationManager.validatePassword(passwordTextField: self.passwordTextField,
+                                                                            confirmPasswordTextField: self.confirmPasswordTextField,
+                                                                            errorPasswordLabel: self.errorPasswordUiLabel,
+                                                                            confirmPasswordErrorLabel: self.errorConfirmtPasswordUiLabel)
+        if resultOfValidationEmail && resultOfValidationPassword {
+            saveButton.isEnabled = true
+        } else {
+            saveButton.isEnabled = false
+        }
+    }
+    
+    //MARK: Actions
+    
+    @IBAction private func validateTextFields() {
+        validate()
+    }
+    
 }
 
 //MARK: UITextViewDelegate

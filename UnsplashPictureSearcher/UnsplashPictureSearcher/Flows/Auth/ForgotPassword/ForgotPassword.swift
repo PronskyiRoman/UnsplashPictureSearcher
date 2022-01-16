@@ -21,6 +21,7 @@ final class ForgotPasswordScreen: UIViewController {
     private let setupUIButtonManager = SetupUIButtonsManager()
     private let navigationManager = NavigationManager()
     private let setupTextFieldsManager = SetupTextFieldsManager()
+    private let validationManager = ValidationManager()
     
     //MARK: ViewLoad
     
@@ -36,6 +37,8 @@ final class ForgotPasswordScreen: UIViewController {
     private func setupUI() {
         self.view.backgroundColor = .systemGray3
         self.title = "Restoration Password"
+        self.restorePasswordButton.isEnabled = false
+        self.errorEmailUiLabel.isHidden = true
     }
     
     private func setupTextFields() {
@@ -46,11 +49,27 @@ final class ForgotPasswordScreen: UIViewController {
         setupUIButtonManager.setupButton(with: restorePasswordButton, color: .systemGreen, title: "Restore Password")
     }
     
+    //MARK: Functions
+    
+    private func validate() {
+        let resultOfValidationEmail = validationManager.validateEmail(emailTextField: self.emailTextField,
+                                                                      emailErrorLabel: self.errorEmailUiLabel)
+        if resultOfValidationEmail {
+            restorePasswordButton.isEnabled = true
+        } else {
+            restorePasswordButton.isEnabled = false
+        }
+    }
+    
     //MARK: Actions
     
     @IBAction private func restorePasswordButtonTapped() {
         self.navigationManager.showController(StoryboardsNamesKeys.SignIn.rawValue,
                                               ViewControllersIdentifiersKeys.ApplicationSignInScreen.rawValue,
                                               self)
+    }
+    
+    @IBAction private func validateTextFields() {
+        validate()
     }
 }

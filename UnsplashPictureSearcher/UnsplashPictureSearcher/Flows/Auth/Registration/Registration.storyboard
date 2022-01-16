@@ -20,13 +20,16 @@
                                 <rect key="frame" x="20" y="267" width="280" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="validateTextFields" destination="Y6W-OH-hqX" eventType="editingChanged" id="M9k-5N-Q0L"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-6I-TMP">
                                 <rect key="frame" x="20" y="311" width="280" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <connections>
-                                    <action selector="tipingPass:" destination="Y6W-OH-hqX" eventType="editingChanged" id="om8-YK-Bu2"/>
+                                    <action selector="validateTextFields" destination="Y6W-OH-hqX" eventType="editingChanged" id="nVp-Uj-NGM"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGF-Hs-VBI">
@@ -34,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <connections>
-                                    <action selector="tipingPass:" destination="Y6W-OH-hqX" eventType="editingChanged" id="oRR-Tr-TB0"/>
+                                    <action selector="validateTextFields" destination="Y6W-OH-hqX" eventType="editingChanged" id="Vgi-7y-iVx"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-Ku-kdH">
@@ -98,8 +101,8 @@
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="xGF-Hs-VBI" id="UBN-XD-1Ll"/>
                         <outlet property="emailTextField" destination="Dmx-N3-GRY" id="S9j-IB-UZM"/>
+                        <outlet property="errorConfirmtPasswordUiLabel" destination="84N-Wi-OpY" id="jnz-9O-KCZ"/>
                         <outlet property="errorEmailUiLabel" destination="G1g-Ox-t5Q" id="bsO-Be-YVw"/>
-                        <outlet property="errorIsNotPasswordUiLabel" destination="84N-Wi-OpY" id="jnz-9O-KCZ"/>
                         <outlet property="errorPasswordUiLabel" destination="Vqw-BI-fpv" id="Lm9-aT-ap9"/>
                         <outlet property="passwordTextField" destination="vdK-6I-TMP" id="Vxs-4B-MhQ"/>
                         <outlet property="registrationScreenTextLabel" destination="i9s-Ku-kdH" id="RN6-cp-D8H"/>
