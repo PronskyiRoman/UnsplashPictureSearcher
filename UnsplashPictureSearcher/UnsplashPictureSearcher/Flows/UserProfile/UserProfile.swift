@@ -71,6 +71,7 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
         self.errorEmailUiLabel.isHidden = true
         self.errorPasswordUiLabel.isHidden = true
         self.errorConfirmtPasswordUiLabel.isHidden = true
+        editingUserProfileIsAllowed(bool: false, alpha: 0.5)
     }
     
     private func setupTextFields() {
@@ -97,6 +98,30 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK: Functions
     
+    private func editingUserProfileIsAllowed(bool: Bool, alpha: CGFloat) {
+        self.firstNameTextField.isUserInteractionEnabled = bool
+        self.firstNameTextField.alpha = alpha
+        self.lastNameTextField.isUserInteractionEnabled = bool
+        self.lastNameTextField.alpha = alpha
+        self.userInfoTextView.isUserInteractionEnabled = bool
+        self.userInfoTextView.alpha = alpha
+        self.emailTextField.isUserInteractionEnabled = bool
+        self.emailTextField.alpha = alpha
+        self.changePasswordUiButton.isUserInteractionEnabled = bool
+        self.changePasswordUiButton.alpha = alpha
+        self.passwordTextField.isUserInteractionEnabled = bool
+        self.passwordTextField.alpha = alpha
+        self.confirmPasswordTextField.isUserInteractionEnabled = bool
+        self.confirmPasswordTextField.alpha = alpha
+        self.agreemenUISwitch.isUserInteractionEnabled = bool
+        self.agreemenUISwitch.alpha = alpha
+        self.saveButton.isUserInteractionEnabled = bool
+        self.saveButton.alpha = alpha
+        self.agreementLabel.isUserInteractionEnabled = bool
+        self.agreementLabel.alpha = alpha
+        
+    }
+ 
     private func validate() {
         let resultOfValidationEmail = validationManager.validateEmail(emailTextField: self.emailTextField,
                                                                       emailErrorLabel: self.errorEmailUiLabel)
@@ -115,6 +140,14 @@ final class UserProfileScreen: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction private func validateTextFields() {
         validate()
+    }
+    
+    @IBAction private func editButtonDidTapped() {
+        if self.firstNameTextField.isUserInteractionEnabled == false {
+            editingUserProfileIsAllowed(bool: true, alpha: 1)
+        } else {
+            editingUserProfileIsAllowed(bool: false, alpha: 0.5)
+        }
     }
     
 }
